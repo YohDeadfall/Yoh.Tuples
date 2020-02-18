@@ -15,21 +15,13 @@ namespace Yoh.Tuples
 
         public int Length => _data.Length;
 
-        public T GetValue<T>(int index)
-        {
-            if (_data.Length > (uint)index)
-                return _data.GetValue<T>(index);
-            else
-                throw new ArgumentOutOfRangeException(nameof(index));
-        }
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public T GetValue<T>(int index) =>
+            _data.GetValue<T>(index);
 
-        public void SetValue<T>(int index, T value)
-        {
-            if (_data.Length > (uint)index)
-                _data.SetValue<T>(index, value);
-            else
-                throw new ArgumentOutOfRangeException(nameof(index));
-        }
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void SetValue<T>(int index, T value) =>
+            _data.SetValue(index, value);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void AddValue<T>() => AddValue<T>(_data.Length);
@@ -67,7 +59,7 @@ namespace Yoh.Tuples
 
         public void RemoveValue(int index)
         {
-            var length = _data?.Length ?? 0;
+            var length = _data.Length;
             if (length <= (uint)index)
                 throw new ArgumentOutOfRangeException(nameof(index));
 
