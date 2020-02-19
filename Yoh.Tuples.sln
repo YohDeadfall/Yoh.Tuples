@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DCD4C869-B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yoh.Tuples.Tests", "test\Yoh.Tuples.Tests\Yoh.Tuples.Tests.csproj", "{79B431E5-8C31-44CD-B127-EEC6D8ABAFBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yoh.Tuples.Benchmarks", "test\Yoh.Tuples.Benchmarks\Yoh.Tuples.Benchmarks.csproj", "{0A33F8FB-258B-4952-AD86-31125E50D47E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{79B431E5-8C31-44CD-B127-EEC6D8ABAFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79B431E5-8C31-44CD-B127-EEC6D8ABAFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79B431E5-8C31-44CD-B127-EEC6D8ABAFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A33F8FB-258B-4952-AD86-31125E50D47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A33F8FB-258B-4952-AD86-31125E50D47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A33F8FB-258B-4952-AD86-31125E50D47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A33F8FB-258B-4952-AD86-31125E50D47E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{649C6710-9678-43AF-9CDD-08DC34D4916E} = {D21CB079-8C41-45CA-9737-0927D6FC2067}
 		{79B431E5-8C31-44CD-B127-EEC6D8ABAFBC} = {DCD4C869-B306-4611-9D7D-A85D1745D3A2}
+		{0A33F8FB-258B-4952-AD86-31125E50D47E} = {DCD4C869-B306-4611-9D7D-A85D1745D3A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE4DDEAB-38CC-4F50-BDBA-6E80AE31D50B}
